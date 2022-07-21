@@ -3,17 +3,47 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dr.Root Portfolio</title>
+	<style>
+		img {
+  			filter: grayscale(100%);
+			filter: opacity(50%);
+			filter: drop-shadow(8px 8px 10px gray);
+			}
+/*		div {
+  			filter: grayscale(100%);
+			filter: opacity(50%);
+			filter: drop-shadow(8px 8px 10px gray);
+			}*/
+	.image img {
+  transform: rotateX(0deg) rotateZ(10deg) translate3d(40px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+}
+.image:hover img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+}
+	</style>
 </head>
 
 <html>
 <body>
 <h3><i>This Is My Portfolio.</i></h3>
-<h3><i>My</i> <strong>Scholarship</strong> <i>Cert.</i> <a href="https://www.learnenough.com/"><em>@ Learn Enough To Be… Dangerous.</em></a> </h3>
-<a href="https://www.learnenough.com/certificates/Mahmoud"><img src="https://www.learnenough.com/certificates/Mahmoud/command-line-tutorial.svg" width=150 hight=150 alt="Certificate of Completion for Learn Enough Command Line"></a>
-<a href="https://www.learnenough.com/certificates/Mahmoud"><img src="https://www.learnenough.com/certificates/Mahmoud/text-editor-tutorial.svg" width=150 hight=150 alt="Certificate of Completion for Learn Enough Text Editor"></a>
+<h3><i>My</i> <strong>Scholarship</strong> <i>Cert.</i> 
+<a href="https://www.learnenough.com/"><em>@ Learn Enough To Be… Dangerous.</em></a> </h3>
+<div class="container">
+  <div class="image">
+  	<a href="https://www.learnenough.com/certificates/Mahmoud"><img src="https://www.learnenough.com/certificates/Mahmoud/command-line-tutorial.svg" width=150 hight=150 alt="Certificate of Completion for Learn Enough Command Line"></a>
+<a href="https://www.learnenough.com/certificates/Mahmoud"><img src="https://www.learnenough.com/certificates/Mahmoud/text-editor-tutorial.svg" width=150 hight=150 alt="Certificate of Completion for Learn Enough Text Editor"></a></div></div>
+
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<br>
+<div>
 <p>You Can Check it out <a href="https://www.learnenough.com/certificates/Mahmoud
 "><em>My Profile @ Learn Enough To Be Dangerous</em></a></p>
-
+<div>
 
 <h3>My Other Scholarship Achivments :</h3>
 
@@ -30,10 +60,14 @@
 
 <div>
 	<h3>Udemy: </h3>
+	<div class="container">
+  		<div class="image">
 	<a href="https://www.udemy.com/certificate/UC-ARLX4BF3"><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-ARLX4BF3.jpg?v=1542465186000" alt="Python and Django Full Stack Web Developer Bootcamp" width="300" height="300">
 	</a>
+	&nbsp;&nbsp;
 	<a href="https://www.udemy.com/certificate/UC-CPEVG6IG"><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-CPEVG6IG.jpg?v=1553526985000" alt="EMMET Faster HTML & CSS workflow - Best Tool For Developers" width="300" height="300">
 	</a>
+</div></div>
 </div>
 </body>
 </html>
